@@ -70,11 +70,4 @@ public class BuildScriptYamlHandler extends YamlConfiguration {
         config.load(file);
         return config;
     }
-
-    public static @NotNull BuildScriptYamlHandler loadFrom(@NotNull Reader reader) throws IOException, InvalidConfigurationException {
-        Validate.notNull(reader, "Stream cannot be null");
-        BuildScriptYamlHandler config = new BuildScriptYamlHandler();
-        config.load(reader);
-        return config;
-    }
 }
