@@ -1,0 +1,15 @@
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+main: com.github.coreyshupe.buildproducer.BuildProducerPlugin
+
+commands:
+  buildproduce:
+    usage: "/buildproduce [script name|finish] <execute|create>"
+    permission: "user.build.produce"
+    description: "Allows builders to have a production environment where they can reproduce builds they create."
+
+permissions:
+  user.build.produce:
+    description: "Gives permission for the build production command."
+    default: op
